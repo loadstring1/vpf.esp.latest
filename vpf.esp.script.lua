@@ -20,7 +20,7 @@ function SetUpVPF(cplr)
 	ScreenGui.DisplayOrder = 9999
 	ScreenGui.ResetOnSpawn = false
 	ScreenGui.IgnoreGuiInset = true
-	--syn.protect_gui(ScreenGui)
+	--syn.protect_gui(ScreenGui) sadly if you add protection to vpf esp it breaks and wont render most of added parts
 	ScreenGui.Parent = game:GetService("CoreGui")
 	local vpf = Instance.new("ViewportFrame",ScreenGui)
 	vpf.Active = false
